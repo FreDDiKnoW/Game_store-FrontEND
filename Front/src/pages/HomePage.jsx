@@ -92,18 +92,18 @@ function HomePage() {
           onChange={e => setSearchTerm(e.target.value)}
         />
         <select value={selectedGenre} onChange={e => setSelectedGenre(e.target.value)}>
-          <option value="">Всі жанри</option>
+          <option value="">Genres</option>
           {genres.map(genre => <option key={genre.id} value={genre.id}>{genre.name}</option>)}
         </select>
         <select value={selectedDeveloper} onChange={e => setSelectedDeveloper(e.target.value)}>
-          <option value="">Всі розробники</option>
+          <option value="">Developers</option>
           {developers.map(dev => <option key={dev.id} value={dev.id}>{dev.name}</option>)}
         </select>
         <select value={sortOrder} onChange={e => setSortOrder(e.target.value)}>
-          <option value="name-asc">За назвою (А-Я)</option>
-          <option value="name-desc">За назвою (Я-А)</option>
-          <option value="price-asc">За ціною (спочатку дешеві)</option>
-          <option value="price-desc">За ціною (спочатку дорогі)</option>
+          <option value="name-asc">Name (А-Z)</option>
+          <option value="name-desc">namE (Z-A)</option>
+          <option value="price-asc">Cost (most cheap)</option>
+          <option value="price-desc">Cost (most expensive)</option>
         </select>
       </div>
       <GameList games={filteredAndSortedGames} />

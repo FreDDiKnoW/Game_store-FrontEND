@@ -13,13 +13,13 @@ function Header() {
         <nav className="header-nav">
           {user ? (
             <div className="user-info">
-              <span>Привіт, <Link to="/profile">{user.username}</Link>!</span>
-              <button onClick={logoutUser}>Вийти</button>
+              <span>t\Hello, <Link to="/profile">{user.username}</Link>!</span>
+              <button onClick={logoutUser}>Exit</button>
             </div>
           ) : (
             <ul>
-              <li><Link to="/login">Вхід</Link></li>
-              <li><Link to="/register" className="nav-button">Реєстрація</Link></li>
+              <li><Link to="/login">Login</Link></li>
+              <li><Link to="/register" className="nav-button">Register</Link></li>
             </ul>
           )}
         </nav>
