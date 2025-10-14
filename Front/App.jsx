@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Outlet } from 'react-router-dom';
+import { AuthProvider } from './src/context/AuthContext';
 import Header from './src/components/Header.jsx';
 
 function App() {
-  const [user, setUser] = useState(null);
-
   return (
-    <div>
-      <Header user={user} />
+    <AuthProvider>
+      <Header />
       <main>
         <Outlet />
       </main>
-    </div>
+    </AuthProvider>
   );
 }
 
