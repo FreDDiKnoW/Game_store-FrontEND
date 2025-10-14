@@ -1,0 +1,17 @@
+.controls-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #1e1e1e;
+}
+.controls-bar select, .controls-bar input {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+.search-input {
+  width: 300px;
+}

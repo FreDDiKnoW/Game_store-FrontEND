@@ -4,11 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node_modules/.bin/vite",
+    "dev": "vite",
     "build": "node_modules/.bin/vite build",
     "preview": "node_modules/.bin/vite preview"
   },
   "devDependencies": {
     "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.9.4"
   }
 }
